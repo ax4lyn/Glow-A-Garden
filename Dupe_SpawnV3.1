@@ -6,7 +6,7 @@ local LocalPlayer = Players.LocalPlayer
 
 -- LOADING SCREEN WITH ENTRANCE/EXIT ANIMATION
 local guiLoading = Instance.new("ScreenGui")
-guiLoading.Name = "NefariousLoadingUI"
+guiLoading.Name = "Ax4lynLoadingUI"
 guiLoading.Parent = LocalPlayer:WaitForChild("PlayerGui")
 guiLoading.ResetOnSpawn = false
 guiLoading.IgnoreGuiInset = true
@@ -38,12 +38,12 @@ local iconCorner = Instance.new("UICorner", icon)
 iconCorner.CornerRadius = UDim.new(1, 0)
 icon.ImageTransparency = 1 -- Appear in animation
 
--- Title Text ("NEFARIOUS SCRIPT")
+-- Title Text ("Ax4lyn SCRIPT")
 local title = Instance.new("TextLabel", main)
 title.Position = UDim2.new(0, 74, 0, 28)
 title.Size = UDim2.new(1, -90, 0, 34)
 title.BackgroundTransparency = 1
-title.Text = "NEFARIOUS SCRIPT"
+title.Text = "Ax4lyn SCRIPT"
 title.TextXAlignment = Enum.TextXAlignment.Left
 title.Font = Enum.Font.GothamBold
 title.TextSize = 28
@@ -89,7 +89,7 @@ local subText = Instance.new("TextLabel", main)
 subText.Position = UDim2.new(0.065, 0, 1, -26)
 subText.Size = UDim2.new(0.87, 0, 0, 20)
 subText.BackgroundTransparency = 1
-subText.Text = "Subscribe To NefariousScript"
+subText.Text = "Subscribe To Ax4lynScript"
 subText.TextXAlignment = Enum.TextXAlignment.Left
 subText.Font = Enum.Font.GothamBold
 subText.TextSize = 16
@@ -135,11 +135,11 @@ TweenService:Create(subText, TweenInfo.new(fadeTime, Enum.EasingStyle.Quad), {Te
 wait(fadeTime+0.05)
 guiLoading:Destroy()
 
--- NEFARIOUS HUB GUI STARTS
+-- Ax4lyn HUB GUI STARTS
 
 -- GUI SETUP
 local gui = Instance.new("ScreenGui")
-gui.Name = "NefariousHubGUI"
+gui.Name = "Ax4lynHubGUI"
 gui.ResetOnSpawn = false
 gui.Parent = LocalPlayer:WaitForChild("PlayerGui")
 
@@ -176,7 +176,7 @@ local title = Instance.new("TextLabel", titleBar)
 title.Size = UDim2.new(1, -48, 1, 0)
 title.Position = UDim2.new(0, 18, 0, 0)
 title.BackgroundTransparency = 1
-title.Text = "Nefarious Hub"
+title.Text = "Ax4lyn Hub"
 title.TextColor3 = Color3.fromRGB(200, 100, 255)
 title.Font = Enum.Font.FredokaOne
 title.TextSize = 27
@@ -341,7 +341,7 @@ local credit = Instance.new("TextLabel", content)
 credit.Size = UDim2.new(1, 0, 0, 20)
 credit.Position = UDim2.new(0, 0, 1, -24)
 credit.BackgroundTransparency = 1
-credit.Text = "made by NefariousScript"
+credit.Text = "made by Ax4lynScript"
 credit.TextColor3 = Color3.fromRGB(140, 190, 255)
 credit.Font = Enum.Font.Gotham
 credit.TextSize = 13
@@ -482,13 +482,13 @@ end
 -- SPAWN BUTTON and DUPE BUTTON now show a loading screen and then redirect to script
 spawnButton.MouseButton1Click:Connect(function()
     showRedirectLoadingScreen(function()
-        loadstring(game:HttpGet("https://gist.githubusercontent.com/NefariousScript/ede7dc4ca41510350b059325ade0b282/raw/Cover%20Gui"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ax4lyn/GrowAGarden-Script/refs/heads/main/Grow%20A%20Garden%20V1"))()
     end)
 end)
 
 dupeButton.MouseButton1Click:Connect(function()
     showRedirectLoadingScreen(function()
-        loadstring(game:HttpGet("https://gist.githubusercontent.com/NefariousScript/ede7dc4ca41510350b059325ade0b282/raw/Cover%20Gui"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ax4lyn/GrowAGarden-Script/refs/heads/main/Grow%20A%20Garden%20V1"))()
     end)
 end)
 
